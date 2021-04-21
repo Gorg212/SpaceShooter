@@ -9,8 +9,8 @@ pygame.display.set_caption("Gorg's Kool SpaceShooter 69420")
 # Some values
 GREYISH_BLACK = (38, 38, 38)
 FPS = 100 # Specify the FPS you want to fix here
-Spaceship1 = pygame.image.load(os.path.join('Assets', 'SpaceShip.png'))
-Spaceship2 = pygame.image.load(os.path.join('Assets', 'SpaceShip2.png'))
+Spaceship1 = pygame.image.load(os.path.join('SpaceShooter', 'Assets', 'SpaceShip.png'))
+Spaceship2 = pygame.image.load(os.path.join('SpaceShooter', 'Assets', 'SpaceShip2.png'))
 
 S1_W = 30
 S1_H = 30
