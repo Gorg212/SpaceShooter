@@ -4,14 +4,16 @@ import os
 width, height = 990, 510
 WIN = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Gorg's Kool SpaceShooter 69420")
+ico = pygame.image.load(os.path.join('Assets', 'icon.jpg'))
+pygame.display.set_icon(ico)
 # pygame.display.set_icon("""E:\Some photos n wallpaers\pfp\kool pfp.jpg""")
 
 # Some values
 GREY = (38, 38, 38)
 FPS = 100 # Specify the FPS you want to fix here
 ShipSpeed = 3 # Speed of the SpaceShip
-Spaceship1 = pygame.image.load(os.path.join('SpaceShooter', 'Assets', 'SpaceShip.png')) # Spaceship1
-Spaceship2 = pygame.image.load(os.path.join('SpaceShooter', 'Assets', 'SpaceShip2.png')) # Spaceship2
+Spaceship1 = pygame.image.load(os.path.join('Assets', 'SpaceShip.png')) # Spaceship1
+Spaceship2 = pygame.image.load(os.path.join('Assets', 'SpaceShip2.png')) # Spaceship2
 # SPACESHIP1 HITBOX
 S1_W = 30
 S1_H = 30
@@ -36,7 +38,7 @@ def S1_control(This_key_is_pressed, S1):
     if This_key_is_pressed[pygame.K_RIGHT] and S1.x + ShipSpeed + S1.width < width:
         S1.x += ShipSpeed
 
-
+ 
 # Main Function. This is where all the magic happens!
 def main():
     S1 = pygame.Rect(250, 230, S1_W, S1_H)
